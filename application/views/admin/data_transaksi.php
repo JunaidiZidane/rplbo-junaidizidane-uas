@@ -25,8 +25,7 @@
         <td><?= date('d/m/Y', strtotime($tr->tgl_pemesanan)); ?></td>
         <td><?= date('d/m/Y', strtotime($tr->tgl_pembayaran)); ?></td>
         <td>Rp.<?= number_format($tr->harga, 0,',','.'); ?>,-</td>
-
-
+        
         <td>
           <?php if($tr->tgl_konfirmasi == "0000-00-00"){
             echo "Belum Selesai";
